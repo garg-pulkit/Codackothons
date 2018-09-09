@@ -1,5 +1,5 @@
 
-class testGeneric<T extends Number>
+class testGeneric<T>
 {
 	T obj;
 	
@@ -17,9 +17,6 @@ class testGeneric<T extends Number>
 	{
 		System.out.println(obj.getClass().getName());
 	}
-	
-	
-		
 }
 
 public class GenericClassExample {
@@ -31,10 +28,9 @@ public class GenericClassExample {
 		t.getClass();
 		System.out.println(t.getValue());
 		
-		
-		/*testGeneric<String> str = new testGeneric("Pulkit Garg");
+	    testGeneric<String> str = new testGeneric("Pulkit Garg");
 		str.getClass();
-		System.out.println(str.getValue());*/
+		System.out.println(str.getValue());
 	}
 	
 	
